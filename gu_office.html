@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구청</title>
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="./css/accordion.css" type="text/css">
+</head>
+<body>
+  <h2>구청 아코디언</h2>
+  <p>아코디언으로 구성한 지도</p>
+  
+  <section id="gu_office">
+    <h3>구청목록</h3>
+    
+    <!-- 강남구청 -->
+    <article class="panel">
+      <h3 data-lat="37.5175066" data-lng="127.0473753" class="g_office">강남구청<i class="fas fa-angle-down"></i></h3>
+      <div class="panel-body">
+        <!-- 지도 표시 -->
+        <div class="g_map" id="map1"></div>
+      </div>
+    </article>
+
+    <!-- 종로구청 -->
+    <article class="panel">
+      <h3 data-lat="37.5734684" data-lng="126.978984" class="g_office">종로구청<i class="fas fa-angle-down"></i></h3>
+      <div class="panel-body">
+        <!-- 지도 표시 -->
+        <div class="g_map" id="map2"></div>
+      </div>
+    </article>
+
+    <!-- 마포구청 -->
+    <article class="panel">
+      <h3 data-lat="37.566242" data-lng="126.9019425" class="g_office">마포구청<i class="fas fa-angle-down"></i></h3>
+      <div class="panel-body">
+        <!-- 지도 표시 -->
+        <div class="g_map" id="map3"></div>
+      </div>
+    </article>
+  </section>
+
+  <!-- Kakao Map API -->
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9daee04e1959585dad5e7d8d111e95b6"></script>
+
+  <!-- 지도 JS -->
+  <script src="./js/map.js"></script>
+</body>
+</html>
